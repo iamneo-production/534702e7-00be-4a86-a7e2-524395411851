@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Deliveries</h2>
+@* @model List<DeliveryItems> *@
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Delivery Id</th>
+            <th>Order Id</th>
+            <th>Establishment Date</th>
+            <th>Delivery Status</th>
+        </tr>
+    </thead>
+    <tr>
+            <td>Name</td>
+            <td>Price</td>
+            <td> Date </td>
+            <td> Status </td>
+            <td>
+                 @Html.ActionLink("Edit", "Edit") |
+                <button class="delete-button" >Delete</button>
+            </td>
+        </tr>
+    
+</table>
+
+</div>
